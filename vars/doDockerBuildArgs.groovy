@@ -10,7 +10,7 @@
 //
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-def void call(String tag,String dir='.',String[] args) {
+def void call(String tag,String[] args,String dir='.') {
   def String command = "docker build "
   for(String arg:args){
     command = command + "--build-arg ${arg} "

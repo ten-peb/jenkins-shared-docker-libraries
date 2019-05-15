@@ -15,7 +15,7 @@ def void call(String tag,String[] args){
   for(String arg:args){
     command = command + "--build-arg ${arg} "
   }
-  command = command + "  -t " + tag + "." 
+  command = command + "  -t " + tag + "  ." 
   sh(script: command)
   
 }
